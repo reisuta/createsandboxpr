@@ -1,3 +1,13 @@
 body {
   font-family: sans-serif;
 }
+
+.remove {
+  margin-left: 10px;
+  width: 60px;
+  height: 30px;
+}
+
+.delete {
+  color: red;
+}
