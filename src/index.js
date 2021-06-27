@@ -1,10 +1,10 @@
-import "./styles.css";
+const in1 = document.getElementById("in1");
+const add = document.getElementById("add");
+const list = document.getElementById("list");
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+add.addEventListener("click", () => {
+  const li = document.createElement("li");
+  li.textContent = in1.value;
+  list.appendChild(li);
+  in1.value = "";
+});
