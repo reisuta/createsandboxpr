@@ -2,12 +2,62 @@ body {
   font-family: sans-serif;
 }
 
-.remove {
+/* .remove {
   margin-left: 10px;
   width: 60px;
   height: 30px;
+} */
+
+input {
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+  outline: none;
 }
 
-.delete {
-  color: red;
+button {
+  border-radius: 16px;
+  border: none;
+  margin-right: 7px;
+  padding: 4px 16px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.inputarea {
+  background-color: #c1ffff;
+  width: 400px;
+  height: 30px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.imcomplete {
+  background-color: #c6ffe2;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.complete {
+  background-color: #ffffe0;
+  width: 400px;
+  min-height: 200px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+  color: #666;
 }

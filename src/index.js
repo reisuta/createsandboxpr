@@ -1,8 +1,9 @@
 const in1 = document.getElementById("in1");
 const add = document.getElementById("add");
 const list = document.getElementById("list");
+const list2 = document.getElementById("list2");
 
-add.addEventListener("click", () => {
+const onclickadd = () => {
   const li = document.createElement("li");
   li.textContent = in1.value;
   list.appendChild(li);
@@ -22,7 +23,23 @@ add.addEventListener("click", () => {
     list.removeChild(li);
   });
 
+  const button3 = document.createElement("button");
+  button3.classList.add("return");
+  button3.textContent = "戻す";
+
   button2.addEventListener("click", () => {
-    li.classList.add("delete");
+    list2.appendChild(li);
+    li.removeChild(button);
+    li.removeChild(button2);
+    li.appendChild(button3);
   });
-});
+
+  button3.addEventListener("click", () => {
+    list.appendChild(li);
+    li.removeChild(button3);
+    li.appendChild(button);
+    li.appendChild(button2);
+  });
+};
+
+add.addEventListener("click", () => onclickadd());

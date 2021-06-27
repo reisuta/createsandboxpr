@@ -9,10 +9,20 @@
   <body>
     <h1 id="head">To do app</h1>
 
-    <input id="in1" placeholder="入力欄" />
-    <input id="add" type="button" value="追加" />
+    <div class="inputarea">
+      <input id="in1" placeholder="入力欄" />
+      <button id="add">追加</button>
+    </div>
+    <div class="imcomplete">
+      <p class="title">未完了のTODO</p>
+      <ul id="list"></ul>
+    </div>
+    <div class="complete">
+      <p class="title">完了のTODO</p>
+      <ul id="list2"></ul>
+    </div>
     <br />
-    <ul id="list"></ul>
+    <ul></ul>
 
     <script src="src/index.js"></script>
   </body>
